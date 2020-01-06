@@ -1,0 +1,8 @@
+/* css voor cursor 1 */
+.btn-secondary, a, .cursorselect>img{
+    cursor: url('../img/cursor2.png'), pointer !important;
+}
+
+*{
+    cursor: url('../img/cursor1.png'), pointer !important;
+}

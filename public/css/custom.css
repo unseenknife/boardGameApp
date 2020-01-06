@@ -1,0 +1,468 @@
+
+div.main{
+    background: #ffa111; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffa111 1%, #751509 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #ffa111), color-stop(100%, #751509)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffa111 1%, #751509 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffa111 1%, #751509 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffa111 1%, #751509 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffa111 1%, #751509 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0264d6', endColorstr='#1c2b5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height:calc(100vh);
+    width:100%;
+}
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+* {
+    box-sizing: border-box;
+    margin:0px auto;
+
+&:before,
+&:after {
+     box-sizing: border-box;
+ }
+
+}
+
+body {
+
+    color: #606468;
+    font: 87.5%/1.5em 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    border: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+    -webkit-appearance: none;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.clearfix {
+    *zoom: 1;
+
+&:before,
+&:after {
+     content: ' ';
+     display: table;
+ }
+
+&:after {
+     clear: both;
+ }
+
+}
+
+.containerLogin {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+
+#login form{
+    width: 250px;
+}
+#login, .logo{
+    display:inline-block;
+    width:40%;
+}
+#login{
+    border-right:1px solid #fff;
+    padding: 0px 22px;
+    width: 59%;
+}
+.logo{
+    color:#fff;
+    font-size:50px;
+    line-height: 125px;
+}
+
+#login form span.fa , form span.fas{
+    background-color: #fff;
+    border-radius: 3px 0px 0px 3px;
+    color: #000;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size:24px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+#login form input {
+    height: 50px;
+}
+fieldset{
+    padding:0;
+    border:0;
+    margin: 0;
+
+}
+#login form input[type="email"], input[type="password"], input[type="text"]{
+    background-color: #fff;
+    border-radius: 0px 3px 3px 0px;
+    color: #000;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 200px;
+}
+
+#login form input[type="submit"] {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #000000;
+    color: #eee;
+    font-weight: bold;
+    /* margin-bottom: 2em; */
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+#login form input[type="submit"]:hover {
+    background-color: #d44179;
+}
+
+#login > p {
+    text-align: center;
+}
+
+#login > p span {
+    padding-left: 5px;
+}
+.middle {
+    display: flex;
+    width: 600px;
+}
+
+.app.login, .app.register{
+    display:none;
+}
+
+.registerLogo{
+    margin-top: 18%;
+}
+
+/* ---------- Register ---------- */
+
+#register form{
+    width: 250px;
+}
+#register, .logo{
+    display:inline-block;
+    width:40%;
+}
+#register{
+    border-left:1px solid #fff;
+    padding: 0px 22px;
+    width: 59%;
+    margin-left: 18%;
+}
+.logo{
+    color:#fff;
+    font-size:50px;
+    line-height: 125px;
+}
+
+#register form span.fa , form span.fas{
+    background-color: #fff;
+    border-radius: 3px 0px 0px 3px;
+    color: #000;
+    display: block;
+    float: left;
+    height: 50px;
+    font-size:24px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+#register form input {
+    height: 50px;
+}
+fieldset{
+    padding:0;
+    border:0;
+    margin: 0;
+
+}
+#register form input[type="email"], input[type="password"], input[type="text"]{
+    background-color: #fff;
+    border-radius: 0px 3px 3px 0px;
+    color: #000;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 200px;
+}
+
+#register form input[type="submit"] {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #000000;
+    color: #eee;
+    font-weight: bold;
+    /* margin-bottom: 2em; */
+    text-transform: uppercase;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+#register form input[type="submit"]:hover {
+    background-color: #d44179;
+}
+
+#register > p {
+    text-align: center;
+}
+
+#register > p span {
+    padding-left: 5px;
+}
+
+.card {
+    border-radius:0;
+    margin:10px auto;
+}
+.card-title {
+    /*text-transform: uppercase;*/
+    color: #E44424;
+}
+
+
+.numberofplayer{
+
+    float: left;
+}
+
+.duration{
+
+    float:right;
+}
+
+.card-text {
+    margin-top:35px;
+    margin-bottom: 10px;
+    background-color:#FFFFFF;
+    color:#000000;
+}
+
+.bg-nav{
+    background-color: #E44424!important;
+}
+
+.navlink{
+    color: #FFFFFF!important;
+}
+
+.btnLoginRegister{
+    background-color: #000000!important;
+    border-color: #000000!important;
+    width:49%;
+}
+
+.btn-primary{
+    background-color: #FFA111;
+    border-color: #FFA111;
+    color: #FFFFFF!important;
+}
+
+.dropdownnav{
+     background-color: #E44424;
+ }
+
+a.dropdown-item.navlink:hover{
+    background-color: #FFA111;
+}
+
+li.nav-item.active:hover{
+    background-color: #FFA111;
+}
+
+a.navbar-brand.navlink:hover{
+    background-color: #FFA111;
+}
+
+.gamesInput{
+    padding:unset;
+}
+
+.labelMaxPlayer{
+    text-align: center;
+}
+
+.player_online{
+    color: #23a817;
+}
+
+.player_away{
+    color: #ffb900;
+}
+
+.player_offline{
+    color: #6c757d;
+}
+
+.cardLobbyList{
+    margin:auto;
+    text-align: center;
+}
+
+.lobbyCard{
+    padding:unset;
+}
+
+.createBattle{
+    width: 40%;
+}
+
+.btnCreateBattle{
+    margin-right: 2%;
+    height: 98%;
+    margin-top: 1%;
+}
+
+.showGameText{
+    margin-top: 1%;
+}
+
+.displayFileInput{
+    display: none;
+}
+
+.editUser{
+    width:50%;
+}
+
+.formEditUser{
+    width:90%;
+}
+
+.pwEditUser{
+    width: 100%!important;
+}
+
+.fa-circle{
+    width: 7%;
+}
+
+.cursorSelect{
+    -webkit-appearance: radio;
+}
+
+.cursor{
+    text-align: center;
+    margin:unset;
+}
+
+.statusPlayer{
+    width:100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.battleWinner{
+    margin-top: 5%;
+    text-align: left;
+}
+
+.battleWinnerButton{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.destroyBtn{
+    width: 50px;
+    float: right;
+    margin: 0px;
+    display: contents;
+}
+
+.cardUser{
+    float:left;
+}
+
+.destroyBtnUser{
+    float:right;
+    text-align: right;
+}
+
+.gameCardName{
+    text-align: left;
+}
+
+.gameCardBtns{
+    text-align: right;
+}
+
+a.btn.btn-primary:hover, a.btn.btn-primary:focus, a.btn.btn-primary:active{
+    background-color: #E44424!important;
+    border-color: #E44424!important;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgb(228, 68, 36)!important;
+}
+
+.destroyBtnBattle{
+    height: auto;
+    margin-top: auto;
+}
+
+.marginBattle{
+    margin-bottom: 4%;
+}
+
+.fa-trophy{
+    color:#FFA111;
+}
+
+.showBattleProfile{
+    margin-bottom: 1%;
+}
+
+.widthBtn{
+    width:100%;
+}
+
+.btnProfileBattle{
+    width: 33%;
+    float: left;
+}
+
+.forumInput{
+    width:100%!important;
+}
+
+.form-control{
+    color: #495057!important;
+}
+
+.card-img-top {
+    height:80%;
+}
